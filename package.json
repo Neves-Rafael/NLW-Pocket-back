@@ -3,20 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch ./src/server.ts"
+    "dev": "tsx --env-file .env watch ./src/server.ts"
   },
   "keywords": [],
   "author": "Rafael Neves (nevesrafael.dev@gmail.com)",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@rocketseat/eslint-config": "2.2.2",
+    "@biomejs/biome": "1.8.3",
     "@types/node": "22.5.4",
-    "eslint": "8.57.0",
+    "drizzle-kit": "0.24.2",
     "tsx": "4.19.0",
     "typescript": "5.6.2"
   },
   "dependencies": {
-    "fastify": "4.28.1"
+    "drizzle-orm": "0.33.0",
+    "fastify": "4.28.1",
+    "postgres": "3.4.4",
+    "zod": "3.23.8"
   }
 }
