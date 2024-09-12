@@ -1,0 +1,22 @@
+//Install { Rest }Client Extension to use
+
+POST http://localhost:3333/goals
+Content-Type: application/json
+
+{
+  "title": "Leitura",
+  "desiredWeeklyFrequency": 3
+}
+
+###
+
+GET http://localhost:3333/pending-goals
+
+###
+
+POST http://localhost:3333/completions
+Content-Type: application/json
+
+{
+  "goalId":"ezrfyz8cng7qn023u0at2xnc"
+}
