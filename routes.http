@@ -20,3 +20,7 @@ Content-Type: application/json
 {
   "goalId":"ezrfyz8cng7qn023u0at2xnc"
 }
+
+###
+
+GET http://localhost:3333/summary
