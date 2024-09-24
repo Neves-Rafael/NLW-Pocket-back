@@ -4,7 +4,7 @@ POST http://localhost:3333/goals
 Content-Type: application/json
 
 {
-  "title": "Leitura",
+  "title": "natação",
   "desiredWeeklyFrequency": 3
 }
 
@@ -18,7 +18,7 @@ POST http://localhost:3333/completions
 Content-Type: application/json
 
 {
-  "goalId":"ezrfyz8cng7qn023u0at2xnc"
+  "goalId":"g8dq4mpbzwrfsdphopmsbpp0"
 }
 
 ###

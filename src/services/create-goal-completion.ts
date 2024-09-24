@@ -47,7 +47,7 @@ export async function createGoalCompletion({ goalId }: createGoalCompletionParam
 
   const insertResult = await db.insert(goalCompletions).values({ goalId }).returning();
 
-  const goalCompletion = result[0];
+  const goalCompletion = insertResult[0];
 
   return {
     goalCompletion,

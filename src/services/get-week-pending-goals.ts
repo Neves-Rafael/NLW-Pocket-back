@@ -36,7 +36,7 @@ export async function getWeekPendingGoals() {
   );
 
   const pendingGoals = await db
-    .with(goalCompletionCounts, goalsCreateUpToWeek)
+    .with(goalsCreateUpToWeek, goalCompletionCounts)
     .select({
       id: goalsCreateUpToWeek.id,
       title: goalsCreateUpToWeek.title,

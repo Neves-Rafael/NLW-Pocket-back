@@ -6,14 +6,8 @@ interface createGoalParams {
   desiredWeeklyFrequency: number;
 }
 
-export async function createGoal({
-  title,
-  desiredWeeklyFrequency,
-}: createGoalParams) {
-  const result = await db
-    .insert(goals)
-    .values({ title, desiredWeeklyFrequency })
-    .returning();
+export async function createGoal({ title, desiredWeeklyFrequency }: createGoalParams) {
+  const result = await db.insert(goals).values({ title, desiredWeeklyFrequency }).returning();
 
   const goal = result[0];
 
